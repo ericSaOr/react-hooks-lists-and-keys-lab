@@ -5,15 +5,15 @@ function ProjectList({ projects }) {
   console.log(projects);
   const projectListElements = projects.map((project)=>{
     return (
-      <ProjectItem key={project.id}>
-        {project.name},
+      <ProjectItem key={project.id} name={project.name}
         
-        {project.about},
+      about={project.about}
 
-        {project.techologies}
+      technologies={project.technologies}/>
+       
         
         
-        </ProjectItem>
+        
     )
   })
   return (
